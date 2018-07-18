@@ -14,9 +14,10 @@ public class Book {
     private boolean onLoan;
     private Borrower borrower;
 
-    public Book(String title, String author) {
+    public Book(String title, String author, Borrower borrower) {
         this.title = title;
         this.author = author;
+        this.borrower = borrower;
     }
 
     public Book(){}
@@ -59,7 +60,7 @@ public class Book {
         this.onLoan = onLoan;
     }
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name="borrower_id", nullable = false)
     public Borrower getBorrower() {
         return borrower;

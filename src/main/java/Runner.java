@@ -9,6 +9,8 @@ public class Runner {
 
     public static void main(String[] args) {
 
+//        DBHelper.deleteAll(Borrower.class);
+//        DBHelper.deleteAll(Book.class);
 
 
         Borrower borrower1 = new Borrower("Zsolt");
@@ -34,8 +36,5 @@ public class Runner {
 
 
 
-
-
-
-    }
+        }
 }

@@ -5,7 +5,7 @@ import org.hibernate.annotations.Fetch;
 import javax.persistence.*;
 
 @Entity
-@Table(name="books")
+@Table(name= "books" )
 public class Book {
 
     private int id;
@@ -51,7 +51,7 @@ public class Book {
         this.author = author;
     }
 
-    @Column(name = "On Loan?")
+    @Column(name = "onloan")
     public boolean isOnLoan() {
         return onLoan;
     }

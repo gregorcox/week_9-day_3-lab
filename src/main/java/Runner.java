@@ -28,6 +28,8 @@ public class Runner {
         Borrower borrower1 = new Borrower("Zsolt");
         DBHelper.save(borrower1);
 
+        Test
+
 
 
 

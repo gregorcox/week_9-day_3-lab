@@ -12,7 +12,7 @@ public class Book {
     private String title;
     private String author;
     private boolean onLoan;
-    private Borrower borrower;
+    private Borrower borrower;git
 
     public Book(String title, String author) {
         this.title = title;

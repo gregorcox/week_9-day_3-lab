@@ -38,7 +38,7 @@ public class Borrower {
     }
 
 
-    @OneToMany(mappedBy = "borrower")
+    @OneToMany(mappedBy = "borrower", fetch = FetchType.LAZY)
     public List<Book> getItemsBorrowed() {
         return itemsBorrowed;
     }

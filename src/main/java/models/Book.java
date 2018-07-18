@@ -51,6 +51,7 @@ public class Book {
         this.author = author;
     }
 
+
     @Column(name = "onloan")
     public boolean isOnLoan() {
         return onLoan;

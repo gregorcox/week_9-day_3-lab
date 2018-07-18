@@ -51,7 +51,7 @@ public class Book {
         this.author = author;
     }
 
-    @Column(name = "On Loan?")
+    @Column(name = "on_Loan")
     public boolean isOnLoan() {
         return onLoan;
     }

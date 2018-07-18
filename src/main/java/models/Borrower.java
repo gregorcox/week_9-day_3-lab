@@ -38,6 +38,7 @@ public class Borrower {
     }
 
 
+    @OneToMany(mappedBy = "borrower")
     public List<Book> getItemsBorrowed() {
         return itemsBorrowed;
     }

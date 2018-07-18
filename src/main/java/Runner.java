@@ -8,14 +8,26 @@ import java.util.List;
 public class Runner {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
 //
+=======
+>>>>>>> 41eb5677721f97685714cdffcfc75cd1382cc582
 
-        Book book1 = new Book("Harry Potter", "JK Rowling");
+
+
+        Borrower borrower1 = new Borrower("Zsolt");
+        DBHelper.save(borrower1);
+
+        Book book1 = new Book("Harry Potter", "JK Rowling", borrower1);
         DBHelper.save(book1);
+<<<<<<< HEAD
 
         Book book2 = new Book("Book", "John Smith");
+=======
+        Book book2 = new Book("Book", "John Smith", borrower1);
+>>>>>>> 41eb5677721f97685714cdffcfc75cd1382cc582
         DBHelper.save(book2);
-        Book book3 = new Book("Boooook", "James Jones");
+        Book book3 = new Book("Boooook", "James Jones", borrower1);
         DBHelper.save(book3);
 
         List<Book> books = new ArrayList<Book>();
@@ -23,10 +35,12 @@ public class Runner {
         books.add(book2);
         books.add(book3);
 
-        Borrower borrower1 = new Borrower("Zsolt");
-        DBHelper.save(borrower1);
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 41eb5677721f97685714cdffcfc75cd1382cc582
 
 
 
